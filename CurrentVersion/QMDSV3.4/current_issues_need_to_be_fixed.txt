@@ -1,0 +1,41 @@
+Hey so i have created a class for the database connection based on the tutorial stuart was using. 
+I then conntinued on to create some insert functions that we should be able to use for all the pages that i think we will need along with some update statements for the types of thing s i have setup in the database to update.
+
+There are a few problems with the current implimentation:
+
+1) putting information in
+The values we need to insert need to be defined as variable in the visual studio forms.
+
+2) putting information in 
+I need help to know how to do this. I need to know hoe to create a placeholder variable in Visual studio and then refrence it in the SQL script 
+(refrencing it will probebly be the easiest part just need to really know how to create a varable ie problem 1).
+
+3) Retireivinginformation to the application
+Need to work out a make select function statements in VS. and where /what i need to return the information into. (i dont know what i can put on the application form to return values into). once i know how to do this i think we should have smooth sailing as i have most of the select statements ready to go and tested in mysql.
+
+4) retireving informaion and security
+Need to work out the signin function and how it will determine the form types that will be avalible to people. I can write a function to look up the UserID, the associated hashed password & the access_lvl but these will need to be compared tot he values the user gives on the form & a true false case i think should be implemented. 
+
+5) more forms
+Think that we need some more forms to update information once in the database from. this should be restricted to users.
+1 form Update personnel details: (created a function these already in DBconnnect class)
+Address 
+Phone  
+
+6)
+documentation needs to be looked at and compeleted. 
+
+
+This foldercontains the most recent version of the Database as well as it has had another minor change i have added 2 date tiem fields to the incident tabel to help witrh people management. 
+Up to you if you want to upgrade your db other wise it will only need to be changed for the final submission. 
+
+Thanks
+Ryan
+ 
+any questions reguarding this document can be direct to me via email, facebook or phone
+email: ryanjopo@hotmail.com
+phone: 0421463345
+
+
+
+
