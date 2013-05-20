@@ -1,0 +1,17 @@
+Sets up the database in 2 scripts. 
+I have changed 3 things 
+some of the primary keys have been revised to reflect the new data in the relation they form
+SOme of the names have been changed to reflect a single style of naming attributes
+and 1 of the foregin keys has changed to reflect the better use of arttribute naming.
+
+run creates db V7 first 
+then run inserts non generic 
+
+These two scripts work perfectly. tested on  mulitple machines 
+Stuart and i worked on ht edatabase connection today it offically works we checked both on visual studio side and mysql verifies it.
+GREAT WORK!
+
+can everyone else please show what they have we are having another meeting on Thursday during our tutorial.
+Thanks 
+Ryan
+
