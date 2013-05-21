@@ -63,5 +63,10 @@ namespace WindowsFormsApplication1
             MessageBox.Show(list[2][1]);
             MessageBox.Show(list[3][1]);
         }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

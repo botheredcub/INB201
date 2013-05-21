@@ -76,6 +76,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBconnect.cs" />
+    <Compile Include="External_Links.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="External_Links.Designer.cs">
+      <DependentUpon>External_Links.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inb201Data.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inb201Data.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Incident_management.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +119,9 @@
     <Compile Include="index.Designer.cs">
       <DependentUpon>index.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="External_Links.resx">
+      <DependentUpon>External_Links.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Incident_management.resx">
       <DependentUpon>Incident_management.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +147,17 @@
       <DependentUpon>index.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="inb201Data.xsc">
+      <DependentUpon>inb201Data.xsd</DependentUpon>
+    </None>
+    <None Include="inb201Data.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inb201Data.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inb201Data.xss">
+      <DependentUpon>inb201Data.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

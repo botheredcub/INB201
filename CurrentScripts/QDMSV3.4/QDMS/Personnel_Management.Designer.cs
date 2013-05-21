@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.First_name_label = new System.Windows.Forms.Label();
             this.Last_name_label = new System.Windows.Forms.Label();
             this.Middle_name_label = new System.Windows.Forms.Label();
@@ -56,6 +57,10 @@
             this.r2 = new System.Windows.Forms.TextBox();
             this.r3 = new System.Windows.Forms.TextBox();
             this.r4 = new System.Windows.Forms.TextBox();
+            this.inb201Data = new WindowsFormsApplication1.inb201Data();
+            this.inb201DataBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.inb201Data)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inb201DataBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // First_name_label
@@ -225,11 +230,14 @@
             // 
             // comboBox3
             // 
+            this.comboBox3.DataSource = this.inb201Data;
+            this.comboBox3.DisplayMember = "personnel.Gender";
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(187, 238);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 22;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // comboBox4
             // 
@@ -297,6 +305,16 @@
             this.r4.Size = new System.Drawing.Size(100, 20);
             this.r4.TabIndex = 30;
             // 
+            // inb201Data
+            // 
+            this.inb201Data.DataSetName = "inb201Data";
+            this.inb201Data.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // inb201DataBindingSource
+            // 
+            this.inb201DataBindingSource.DataSource = this.inb201Data;
+            this.inb201DataBindingSource.Position = 0;
+            // 
             // Personnel_Management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -333,6 +351,8 @@
             this.Name = "Personnel_Management";
             this.Text = "People Management";
             this.Load += new System.EventHandler(this.People_Management_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.inb201Data)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inb201DataBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -368,5 +388,7 @@
         private System.Windows.Forms.TextBox r2;
         private System.Windows.Forms.TextBox r3;
         private System.Windows.Forms.TextBox r4;
+        private inb201Data inb201Data;
+        private System.Windows.Forms.BindingSource inb201DataBindingSource;
     }
 }
